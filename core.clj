@@ -1,23 +1,28 @@
-(defscreen main-screen
-  :on-show
-  (fn [screen entities]
-    (update! screen :renderer (stage) :camera (orthographic))
-    (let [ui-skin (skin "skin/uiskin.json")]
-      (table [(label "Making Games\nat Runtime\nwith Clojure" ui-skin
-                     :set-alignment (align :center))
-              :row
-              [(label "by Zach Oakes" (color :white))
-               :pad-top 10]]
-             :align (align :center)
-             :set-fill-parent true)))
-  
-  :on-render
-  (fn [screen entities]
-    (clear!)
-    (render! screen entities))
-  
-  :on-resize
-  (fn [screen entities]
-    (height! screen 400)))
+(load-game-file "slide01.clj")
+(load-game-file "slide02.clj")
 
-(set-game-screen! main-screen)
+(declare overlay-screen)
+
+(def slides [slide-1-screen
+             slide-2-screen])
+
+(defn slide-num
+  []
+  (or (:slide (game-pref)) 1))
+
+(defn set-slide!
+  [n]
+  (when-let [slide (get slides (- n 1))]
+    (game-pref! :slide n)
+    (set-game-screen! overlay-screen slide)))
+
+(defscreen overlay-screen
+  :on-key-down
+  (fn [screen entities]
+    (cond
+      (= (:key screen) (key-code :space))
+      (set-slide! (+ (slide-num) 1))
+      (= (:key screen) (key-code :backspace))
+      (set-slide! (- (slide-num) 1)))))
+
+(set-slide! (slide-num))
