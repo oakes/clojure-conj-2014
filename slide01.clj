@@ -3,7 +3,10 @@
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
     (let [ui-skin (skin "skin/uiskin.json")]
-      (table [(label "Making Games\nat Runtime\nwith Clojure" ui-skin
+      (table [(label (str "Making Games" \newline
+                          "at Runtime" \newline
+                          "with Clojure")
+                     ui-skin
                      :set-alignment (align :center))
               :row
               [(label "by Zach Oakes" (color :white))
@@ -18,4 +21,4 @@
   
   :on-resize
   (fn [screen entities]
-    (height! screen 400)))
+    (width! screen 600)))

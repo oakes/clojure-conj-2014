@@ -18,4 +18,4 @@
   
   :on-resize
   (fn [screen entities]
-    (height! screen 400)))
+    (width! screen 600)))
