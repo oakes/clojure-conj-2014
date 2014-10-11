@@ -1,10 +1,12 @@
-(load-game-file "slide01.clj")
-(load-game-file "slide02.clj")
+(load-game-file "01-title.clj")
+(load-game-file "02-quote.clj")
+(load-game-file "03-about.clj")
 
 (declare overlay-screen)
 
 (def slides [slide-1-screen
-             slide-2-screen])
+             slide-2-screen
+             slide-3-screen])
 
 (defn slide-num
   []
