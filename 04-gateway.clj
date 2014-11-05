@@ -1,4 +1,4 @@
-(defscreen slide-4-screen
+(defscreen gateway-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))

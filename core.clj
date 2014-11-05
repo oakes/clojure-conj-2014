@@ -4,15 +4,17 @@
 (load-game-file "04-gateway.clj")
 (load-game-file "05-class.clj")
 (load-game-file "06-problem.clj")
+(load-game-file "07-indie.clj")
 
 (declare overlay-screen)
 
-(def slides [slide-1-screen
-             slide-2-screen
-             slide-3-screen
-             slide-4-screen
-             slide-5-screen
-             slide-6-screen])
+(def slides [title-screen
+             quote-screen
+             about-screen
+             gateway-screen
+             class-screen
+             problem-screen
+             indie-screen])
 
 (defn slide-num
   []

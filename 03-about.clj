@@ -1,4 +1,4 @@
-(defscreen slide-3-screen
+(defscreen about-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
