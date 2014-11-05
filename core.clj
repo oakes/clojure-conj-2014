@@ -5,6 +5,10 @@
 (load-game-file "05-class.clj")
 (load-game-file "06-problem.clj")
 (load-game-file "07-indie.clj")
+(load-game-file "08-gameplay.clj")
+(load-game-file "09-graphics.clj")
+(load-game-file "10-artistic.clj")
+(load-game-file "11-tools.clj")
 
 (declare overlay-screen)
 
@@ -14,7 +18,11 @@
              gateway-screen
              class-screen
              problem-screen
-             indie-screen])
+             indie-screen
+             gameplay-screen
+             graphics-screen
+             artistic-screen
+             tools-screen])
 
 (defn slide-num
   []

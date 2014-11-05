@@ -1,4 +1,4 @@
-(defscreen indie-screen
+(defscreen tools-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
@@ -7,13 +7,12 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "Indie Games" medium-style)
+      (table [(label "Tools for Indie Games" medium-style)
               :row
               (label (str \newline
-                          "Made by small teams and individuals" \newline
-                          "Fairly new category due to digital stores" \newline
-                          "Use simple graphics by necessity" \newline
-                          "Differentiate with gameplay, artistic merit")
+                          "Managed, cross-platform" \newline
+                          "Powerful abstractions (functional & logic)" \newline
+                          "Interactive, REPL-driven development")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
