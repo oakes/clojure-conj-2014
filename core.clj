@@ -3,6 +3,7 @@
 (load-game-file "03-about.clj")
 (load-game-file "04-gateway.clj")
 (load-game-file "05-class.clj")
+(load-game-file "06-problem.clj")
 
 (declare overlay-screen)
 
@@ -10,7 +11,8 @@
              slide-2-screen
              slide-3-screen
              slide-4-screen
-             slide-5-screen])
+             slide-5-screen
+             slide-6-screen])
 
 (defn slide-num
   []

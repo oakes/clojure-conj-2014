@@ -7,12 +7,12 @@
           small-style (style :label small-font (color :white))]
       (table [(label "About me" ui-skin)
               :row
-              (label (str "Independent programmer in Pgh" \newline
+              (label (str "Independent programmer" \newline
                           "Not a legit game developer" \newline
                           "Used to do crypto/stego" \newline
                           "Joined the dark side" \newline
+                          "Quit in 2012 and started using Clojure" \newline
                           \newline
-                          "Quit in 2012 and started using Clojure:" \newline
                           "Nightweb (anonymous networking client)" \newline
                           "Nightcode (IDE for beginners)" \newline
                           "play-clj (game library)" \newline

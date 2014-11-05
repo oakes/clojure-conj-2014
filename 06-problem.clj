@@ -1,4 +1,4 @@
-(defscreen slide-4-screen
+(defscreen slide-6-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
@@ -7,13 +7,12 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "Gamedev -> Clojure" medium-style)
+      (table [(label "Clojure -> Gamedev" medium-style)
               :row
               (label (str \newline
-                          "Gamedev is a gateway drug" \newline
-                          "Learned C++ at 15 by making games" \newline
-                          "A solid gamedev \"story\" is useful" \newline
-                          "Brings in new people from diverse backgrounds")
+                          "Big budget (AAA) games are mostly stale" \newline
+                          "Only innovate in a narrow way (graphics)" \newline
+                          "Current gamedev tools are great for this")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
