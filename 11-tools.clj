@@ -10,9 +10,9 @@
       (table [(label "Tools for Indie Games" medium-style)
               :row
               (label (str \newline
-                          "Managed, cross-platform" \newline
-                          "Powerful abstractions (functional & logic)" \newline
-                          "Interactive, REPL-driven development")
+                          "1. Managed & cross-platform" \newline
+                          "2. Functional & logic paradigms" \newline
+                          "3. Interactive & REPL-driven")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
