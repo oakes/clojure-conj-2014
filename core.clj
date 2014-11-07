@@ -11,6 +11,7 @@
 (load-game-file "11-tools.clj")
 (load-game-file "12-hosted.clj")
 (load-game-file "13-unity-libgdx.clj")
+(load-game-file "14-good-hosted.clj")
 
 (load-game-file "00-dungeon-crawler.clj")
 
@@ -29,6 +30,7 @@
              [tools-screen]
              [hosted-screen]
              [unity-libgdx-screen]
+             [good-hosted-screen]
              [dungeon-crawler-screen dungeon-crawler-overlay-screen]])
 
 (defn slide-num
