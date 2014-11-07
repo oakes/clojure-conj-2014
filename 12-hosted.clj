@@ -1,4 +1,4 @@
-(defscreen tools-screen
+(defscreen hosted-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
@@ -7,12 +7,13 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "Tools for Indie Games" medium-style)
+      (table [(label "Managed & Hosted Languages" medium-style)
               :row
               (label (str \newline
-                          "1. Managed & hosted" \newline
-                          "2. Functional & logic paradigms" \newline
-                          "3. Interactive & REPL-driven")
+                          "Gamedevs traditionally reject GC" \newline
+                          "Things have changed in last half-decade" \newline
+                          "Many indie games are now made in C# / Java" \newline
+                          "Indies have scarce resources, need to ship")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
