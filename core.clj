@@ -10,19 +10,22 @@
 (load-game-file "10-artistic.clj")
 (load-game-file "11-tools.clj")
 
+(load-game-file "00-dungeon-crawler.clj")
+
 (declare overlay-screen)
 
-(def slides [title-screen
-             quote-screen
-             about-screen
-             gateway-screen
-             class-screen
-             problem-screen
-             indie-screen
-             gameplay-screen
-             graphics-screen
-             artistic-screen
-             tools-screen])
+(def slides [[title-screen]
+             [quote-screen]
+             [about-screen]
+             [gateway-screen]
+             [class-screen]
+             [problem-screen]
+             [indie-screen]
+             [gameplay-screen]
+             [graphics-screen]
+             [artistic-screen]
+             [tools-screen]
+             [dungeon-crawler-screen dungeon-crawler-overlay-screen]])
 
 (defn slide-num
   []
@@ -30,9 +33,9 @@
 
 (defn set-slide!
   [n]
-  (when-let [slide (get slides (- n 1))]
+  (when-let [screens (get slides (- n 1))]
     (game-pref! :slide n)
-    (set-game-screen! overlay-screen slide)))
+    (apply set-game-screen! overlay-screen screens)))
 
 (defscreen overlay-screen
   :on-key-down
