@@ -26,6 +26,7 @@
 (load-game-file "26-functional.clj")
 (load-game-file "27-logic.clj")
 (load-game-file "28-dungeon-crawler.clj")
+(load-game-file "29-interactivity.clj")
 
 (declare overlay-screen)
 
@@ -56,7 +57,8 @@
              [platformer-screen]
              [functional-screen]
              [logic-screen]
-             [dungeon-crawler-screen dungeon-crawler-overlay-screen]])
+             [dungeon-crawler-screen dungeon-crawler-overlay-screen]
+             [interactivity-screen]])
 
 (defn slide-num
   []
