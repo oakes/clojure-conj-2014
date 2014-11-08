@@ -32,6 +32,7 @@
 (load-game-file "32-mural.clj")
 (load-game-file "33-playful-experimentation.clj")
 (load-game-file "34-games-as-art.clj")
+(load-game-file "35-long-and-short.clj")
 
 (declare overlay-screen)
 
@@ -68,7 +69,8 @@
              [street-music-screen]
              [mural-screen]
              [playful-experimentation-screen]
-             [games-as-art-screen]])
+             [games-as-art-screen]
+             [long-and-short-screen]])
 
 (defn slide-num
   []
