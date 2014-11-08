@@ -17,7 +17,6 @@
                           "(nine-patch \"image.png\")" \newline
                           "(particle-effect \"particles/fire.p\")" \newline
                           "(model \"knight.g3dj\")" \newline
-                          "(bundle (shape :filled) (shape :line))" \newline
                           "; ui entities (not enough room to list all)" \newline)
                      small-style)]
              :align (align :center)

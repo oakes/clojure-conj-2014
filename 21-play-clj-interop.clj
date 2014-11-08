@@ -13,10 +13,10 @@
                           "Entities contain Java object in :object key" \newline
                           \newline
                           "(let [entity (texture \"clojure.png\")]
-      (doto ^TextureRegion (:object entity)
-        (.flip true false)
-        (.setRegion 0 0 100 100)
-      entity)")
+  (doto ^TextureRegion (:object entity)
+    (.flip true false)
+    (.setRegion 0 0 100 100)
+  entity)")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))

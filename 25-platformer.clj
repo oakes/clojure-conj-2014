@@ -1,3 +1,5 @@
+; utils
+
 (def ^:const vertical-tiles-p 20)
 (def ^:const duration-p 0.15)
 (def ^:const damping-p 0.5)

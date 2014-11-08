@@ -8,14 +8,14 @@
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
       (table [(label (str "(let [entity (texture \"clojure.png\")]
-      (doto ^TextureRegion (:object entity)
-        (.flip true false)
-        (.setRegion 0 0 100 100)
-      entity)" \newline
+  (doto ^TextureRegion (:object entity)
+    (.flip true false)
+    (.setRegion 0 0 100 100)
+  entity)" \newline
                           \newline
                           "(texture \"clojure.png\"
-    :flip true false
-    :set-region 0 0 100 100)")
+  :flip true false
+  :set-region 0 0 100 100)")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))

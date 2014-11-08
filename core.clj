@@ -16,12 +16,13 @@
 (load-game-file "16-play-clj-core.clj")
 (load-game-file "17-play-clj-neko.clj")
 (load-game-file "18-play-clj-state.clj")
-(load-game-file "19-play-clj-entities.clj")
-(load-game-file "20-play-clj-interop.clj")
-(load-game-file "21-play-clj-dsl.clj")
-(load-game-file "22-play-clj-dsl-bang.clj")
-(load-game-file "23-play-clj-docs.clj")
-(load-game-file "24-platformer.clj")
+(load-game-file "19-play-clj-transform.clj")
+(load-game-file "20-play-clj-entities.clj")
+(load-game-file "21-play-clj-interop.clj")
+(load-game-file "22-play-clj-dsl.clj")
+(load-game-file "23-play-clj-dsl-bang.clj")
+(load-game-file "24-play-clj-docs.clj")
+(load-game-file "25-platformer.clj")
 
 (load-game-file "00-dungeon-crawler.clj")
 
@@ -45,6 +46,7 @@
              [play-clj-core-screen]
              [play-clj-neko-screen]
              [play-clj-state-screen]
+             [play-clj-transform-screen]
              [play-clj-entities-background-screen play-clj-entities-screen]
              [play-clj-interop-screen]
              [play-clj-dsl-screen]
