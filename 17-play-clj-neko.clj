@@ -19,7 +19,6 @@
   
   :on-render
   (fn [screen entities]
-    (clear!)
     (render! screen entities))
   
   :on-resize

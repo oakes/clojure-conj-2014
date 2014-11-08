@@ -34,7 +34,7 @@
 (load-game-file "34-games-as-art.clj")
 (load-game-file "35-long-and-short.clj")
 
-(declare overlay-screen)
+(declare background-screen)
 
 (def slides [[title-screen]
              [quote-screen]
@@ -80,9 +80,29 @@
   [n]
   (when-let [screens (get slides (- n 1))]
     (game-pref! :slide n)
-    (apply set-game-screen! overlay-screen screens)))
+    (apply set-game-screen! background-screen screens)))
 
-(defscreen overlay-screen
+(defscreen background-screen
+  :on-show
+  (fn [screen entities]
+    (update! screen :renderer (stage) :camera (orthographic))
+    (assoc (shape :filled) :id :background))
+  
+  :on-render
+  (fn [screen entities]
+    (clear!)
+    (render! screen entities))
+  
+  :on-resize
+  (fn [{:keys [width height] :as screen} entities]
+    (height! screen height)
+    (let [c1 (color :black)
+          c2 (color 79/256 90/256 100/256 1)]
+      (for [e entities]
+        (case (:id e)
+          :background (shape e :rect 0 0 width height c1 c1 c2 c2)
+          e))))
+  
   :on-key-down
   (fn [screen entities]
     (cond

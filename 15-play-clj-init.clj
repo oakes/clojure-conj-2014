@@ -17,7 +17,7 @@
                           "    desktop/" \newline
                           "    ios/" \newline
                           \newline
-                          "Android uses lein-droid + clojure-android port" \newline
+                          "Android uses lein-droid + clojure-android" \newline
                           "iOS uses lein-fruit + RoboVM" \newline
                           "Mobile is experimental" \newline
                           "Web backend not supported (maybe later via TeaVM?)")
@@ -27,7 +27,6 @@
   
   :on-render
   (fn [screen entities]
-    (clear!)
     (render! screen entities))
   
   :on-resize

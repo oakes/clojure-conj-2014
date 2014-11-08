@@ -4,7 +4,7 @@
     (update! screen :renderer (stage) :camera (orthographic))
     (let [ui-skin (skin "skin/uiskin.json")
           small-font (skin! ui-skin :get-font "small-font")
-          small-style (style :label small-font (color :black))]
+          small-style (style :label small-font (color :white))]
       (table [(image "images/unity.png" :set-scaling (scaling :fit))
               (image "images/libgdx.png" :set-scaling (scaling :fit))
               :row
@@ -23,7 +23,6 @@
   
   :on-render
   (fn [screen entities]
-    (clear! 1 1 1 1)
     (render! screen entities))
   
   :on-resize
