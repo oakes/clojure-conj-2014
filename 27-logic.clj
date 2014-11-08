@@ -17,8 +17,8 @@
                           "    Dialogues are data structures instead of strings" \newline
                           "A Logical Approach to Building Dungeons" \newline
                           "    http://goo.gl/mBfLwO" \newline
-                          "    Generating levels for a roguelike game" \newline
-                          "Many, many other ways to apply it to games")
+                          "    by Anthony Smith and Joanna Bryson" \newline
+                          "    Generating levels for a roguelike game" \newline)
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
