@@ -23,8 +23,9 @@
 (load-game-file "23-play-clj-dsl-bang.clj")
 (load-game-file "24-play-clj-docs.clj")
 (load-game-file "25-platformer.clj")
-
-(load-game-file "00-dungeon-crawler.clj")
+(load-game-file "26-functional.clj")
+(load-game-file "27-logic.clj")
+(load-game-file "28-dungeon-crawler.clj")
 
 (declare overlay-screen)
 
@@ -53,6 +54,8 @@
              [play-clj-dsl-bang-screen]
              [play-clj-docs-screen]
              [platformer-screen]
+             [functional-screen]
+             [logic-screen]
              [dungeon-crawler-screen dungeon-crawler-overlay-screen]])
 
 (defn slide-num

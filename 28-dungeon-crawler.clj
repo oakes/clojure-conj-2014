@@ -500,11 +500,11 @@
                     :x start-player-x
                     :y start-player-y)]
       (->> [(isometric->screen screen me)
-            (take 4 (repeat (create-ogre)))
-            (take 4 (repeat (create-elemental)))
-            (take 4 (repeat (create-magician)))
-            (take 4 (repeat (create-skeleton)))
-            (take 4 (repeat (create-zombie)))
+            (take 5 (repeat (create-ogre)))
+            (take 5 (repeat (create-elemental)))
+            (take 5 (repeat (create-magician)))
+            (take 5 (repeat (create-skeleton)))
+            (take 5 (repeat (create-zombie)))
             (create-werewolf)]
            flatten
            (reduce #(randomize-locations screen rooms %1 %2) []))))
