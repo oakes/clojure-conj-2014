@@ -32,7 +32,7 @@
 (load-game-file "32-mural.clj")
 (load-game-file "33-playful-experimentation.clj")
 (load-game-file "34-games-as-art.clj")
-(load-game-file "35-long-and-short.clj")
+(load-game-file "35-bottom-line.clj")
 
 (declare background-screen)
 
@@ -70,7 +70,7 @@
              [mural-screen]
              [playful-experimentation-screen]
              [games-as-art-screen]
-             [long-and-short-screen]])
+             [bottom-line-screen]])
 
 (defn slide-num
   []

@@ -12,10 +12,8 @@
               (label (str \newline
                           "Biggest selling point; it changes the end product" \newline
                           "Interactivity is not hot-swapping" \newline
-                          "It's the REPL (connected to your game), stupid!" \newline
-                          "Particularly important to artistic endeavors" \newline
-                          "    Overtone" \newline
-                          "    Quil")
+                          "It's the REPL, stupid!" \newline
+                          "Particularly important for art (Overtone, Quil)")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))

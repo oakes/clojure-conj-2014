@@ -13,7 +13,6 @@
                           "I love watching artists engage in their craft" \newline
                           "They constantly iterate (playing a chord, painting over a spot)" \newline
                           "A compiler can't tell you if your art is any good" \newline
-                          "Great art comes from playful experimentation" \newline
                           "The Sound of Silence was made in a bathroom" \newline
                           "Imagine if he couldn't hear his guitar while playing it")
                      small-style)]

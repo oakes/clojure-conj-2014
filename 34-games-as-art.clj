@@ -14,7 +14,7 @@
                           "Ebert claimed games can't be art: http://goo.gl/AfSQ39" \newline
                           "He was right...about games today" \newline
                           "Games mostly just fill your head with endorphins" \newline
-                          "They're capable of more...they can \"say\" something")
+                          "But as a medium they are capable of it")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
