@@ -3,9 +3,11 @@
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
     (let [ui-skin (skin "skin/uiskin.json")
+          medium-font (skin! ui-skin :get-font "medium-font")
+          medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "About me" ui-skin)
+      (table [(label "About me" medium-style)
               :row
               (label (str "Independent programmer" \newline
                           "Not a legit game developer" \newline
