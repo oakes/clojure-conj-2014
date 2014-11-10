@@ -405,5 +405,3 @@
   :on-update-ui
   (fn [screen entities]
     #_(update-all-elements screen entities)))
-
-(set-game-screen! quest-quest-screen quest-quest-ui-screen)
