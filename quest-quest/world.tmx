@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="250" height="75" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tile-set" tilewidth="32" tileheight="32">
+  <image source="tileSet.png" trans="ff00ff" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="tile-map" tilewidth="32" tileheight="32">
+  <image source="tile-map.png" trans="ff00ff" width="512" height="352"/>
+ </tileset>
+ <layer name="background" width="250" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt2UtOwzAQAFBWwAq4ALCrBMeEG8AN6F16LswCqUT8nMa/8XvSqFIWluN4PJP07AwAAFhj13oCnbM+UNZDisfWk4COyRHgFHpZKE+eQTzyGsbj3Rn4j7U1PkJv0Ms52cs86MNhkADWK51Dh8XvKWOgTs/slGcvzyG+0fI8wjs8c2q5d0fLc+pwnsbSMs+fUjxnjPFh+Y5iP8LfWub5S4rXjDFGsVv8/sQ3NWppmedvKfYZY6wln/iPCL3hbPu89jNzlnwVIWdqsVZE5VxkNvZ8HJ5lPTOvtR5wHLn7dOZ9zXbsIwBa0KMClKPHpzZ1PY/16pOzk5LkfXueARGoVVCf+rEN60hpaiTwSc2BOtTeNpxxANBO9P4n+v2tZV0oRW8PQI61PclWvYy6BbAN52lZy/X1Tg/AVtQUStEfQl1yDmAO+ncAgK+8D48hWh8b7X5gJvKX0UXvfXq4vx7mQD9GqRu/7Vt7GpiBs45RavZ3Rp57LXIcoLy/6pGzGABgHr5V9EEPDgAAEI93bgCIR30HAGjP/+swNjkMc5L7MCffUwHmoueDvj2leM68djgKqOE8xUWKy9YTWaGHub+keM28dlj8Mr7ee7KrFNcpbo6u3aa4S3G/wfjHY2015qfv5p47p1O9pdhnXpPnAACxvAOf3mAC
+  </data>
+ </layer>
+ <layer name="walls" width="250" height="75">
+  <data encoding="base64" compression="zlib">
+   eJzt01Fu20AQg2Hf/0Z5lBTfoAdqAmiBgdEHu8AMObP/BxCOU1lm1OXX4/H4ejMAenp34+wc6IudA/Oxc2A+dg7Mx86B+dg5MB87B+Zj58B87ByYj50D87FzYD52DszHzoH52DkwHzsH5mPnwHzsHJiPnWOCT86xY7I5dQH+h3qj7ht/GPYBPqHeKDsHcqn3yc6BXOptsnMgl3qX7BzIpd4kOwdyqffIzoFc6i2ycyCXeofsHMil3iA7B3Kp98fOgVzq7bFzIJd6d+wcyKXeHDsHcqn3xs7ZOXKpt8bO2TlyqXemTgW3PtiLemMOqeDWB/tQ78slFdz6YA/qbTmlglsfzKfelVsquPXBbOpNOaaCWx/Mpd6Tayq49cFM6i05p4JbH8yj3pF7Krj1wSzqDXVIBbc+mEO9ny6p4NYHM6i30ykV3PqgP/VuuqWCWx/0pt5Mx1Rw64O+1HvpmgpufdCTeiudU8GtD/pR76R7Krj1QS/qjUxIBbc+6EO9jymp4NYHPai3MSkV3PrAn3oX01LBrQ+8qTcxMRXc+sCXeg9TU8GtDzyptzA5Fdz6wI96B9NTwa0PvKg3sEMquPWBD/X53yUV3PrAg/rs75QKbn2gpz73u6WCWx9oqc/8jqng1gc66vO+ayq49YGG+qzvnApufVBPfc53TwW3PqilPuOkhlsf1FGfb8LOkUt9tgk7Ry71uSbsHLnUZ5podvXngzx/ctw5f/IdXo/7NV5z3O+vcN36+QifWfe77uuf9/sz/P4I/xbv/fqd18vruvfq8Xp9/N4r3DN+Pn73+uy6Jt7zCvdY18TEZxSf2xm+9wyfP8P758s91s/rb4194vON16/7xOd5hOvjfeNzif8Hx+Pfzzo+w9+ot9MpFT7ZOSHvRr2dTqnwFw2kHqE=
+  </data>
+ </layer>
+ <objectgroup name="checkpoints" width="250" height="75">
+  <object name="1" type="level-up-checkpoint" x="736" y="2272" width="32" height="64"/>
+  <object name="2" type="level-up-checkpoint" x="320" y="2272" width="32" height="64"/>
+ </objectgroup>
+</map>

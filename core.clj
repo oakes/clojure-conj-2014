@@ -33,6 +33,7 @@
 (load-game-file "33-playful-experimentation.clj")
 (load-game-file "34-games-as-art.clj")
 (load-game-file "35-bottom-line.clj")
+(load-game-file "36-quest-quest.clj")
 
 (declare background-screen)
 
@@ -70,7 +71,8 @@
              [mural-screen]
              [playful-experimentation-screen]
              [games-as-art-screen]
-             [bottom-line-screen]])
+             [bottom-line-screen]
+             [quest-quest-screen quest-quest-ui-screen]])
 
 (defn slide-num
   []
