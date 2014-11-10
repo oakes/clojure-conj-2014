@@ -112,7 +112,7 @@
          false)))
 
 ;;; Camera controls
-(defn move-q-camera-q!
+(defn move-camera-q!
   "The camera tracks the player if above 8 or 0. It Centers the camera on the world when player is below 8."
   [screen x y]
   (if (< y camera-height-q)
@@ -340,7 +340,7 @@
   (doseq [{:keys [x y height id]} entities]
     (case id
       :player (do
-                (move-q-camera-q! screen x y)
+                (move-camera-q! screen x y)
                 (when (out-of-bounds-q? y height)
                   (restart-game!)))
       entities))
