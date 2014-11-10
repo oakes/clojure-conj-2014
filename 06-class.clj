@@ -10,7 +10,8 @@
               :row
               (image "images/class1.jpg" :set-scaling (scaling :fit))
               (label "Photo credit:\nAmbridge Connection" small-style)]
-             :set-fill-parent true)))
+             :set-fill-parent true
+             :pad (float 50) (float 0) (float 0) (float 0))))
   
   :on-render
   (fn [screen entities]

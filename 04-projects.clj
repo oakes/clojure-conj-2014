@@ -1,4 +1,4 @@
-(defscreen about-screen
+(defscreen projects-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
@@ -7,13 +7,12 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "About me" medium-style)
+      (table [(label "Projects" medium-style)
               :row
-              (label (str "Independent programmer" \newline
-                          "Not a legit game developer" \newline
-                          "Used to do crypto/stego" \newline
-                          "Joined the dark side" \newline
-                          "Quit in 2012 and started using Clojure")
+              (label (str "Nightweb - anonymous networking client" \newline
+                          "Nightcode - IDE for beginners" \newline
+                          "play-clj - game library" \newline
+                          "Nightmod - game creation tool")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
