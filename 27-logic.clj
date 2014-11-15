@@ -10,7 +10,6 @@
       (table [(label "Logic Programming in Games" medium-style)
               :row
               (label (str \newline
-                          "Relatively unexplored in gamedev, hard to integrate" \newline
                           "Representing Game Dialogue as Expressions in First-Order Logic" \newline
                           "    http://goo.gl/B6F0hH (via @swannodette)" \newline
                           "    by Kaylen Wheeler" \newline

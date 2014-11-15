@@ -17,8 +17,7 @@
                           "    desktop/" \newline
                           "    ios/" \newline
                           \newline
-                          "Android uses lein-droid + clojure-android" \newline
-                          "iOS uses lein-fruit + RoboVM" \newline
+                          "Android uses lein-droid, iOS uses lein-fruit" \newline
                           "Mobile is experimental" \newline
                           "Web backend not supported (maybe later via TeaVM?)")
                      small-style)]
