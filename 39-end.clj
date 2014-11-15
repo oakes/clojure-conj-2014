@@ -1,4 +1,4 @@
-(defscreen tools-screen
+(defscreen end-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
@@ -7,12 +7,11 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "Tools for Indie Games" medium-style)
+      (table [(label "The End" medium-style)
               :row
               (label (str \newline
-                          "1. Managed & hosted" \newline
-                          "2. Functional & logic programming" \newline
-                          "3. Interactive & REPL-driven")
+                          "https://github.com/oakes/clojure-conj-2014" \newline
+                          "zsoakes@gmail.com" \newline)
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
