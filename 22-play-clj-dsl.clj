@@ -14,7 +14,7 @@
                           "(let [entity (texture \"clojure.png\")]
   (doto ^TextureRegion (:object entity)
     (.flip true false)
-    (.setRegion 0 0 100 100)
+    (.setRegion 0 0 100 100))
   entity)")
                      small-style)]
              :align (align :center)
