@@ -10,9 +10,9 @@
       (table [(label "Review" medium-style)
               :row
               (label (str \newline
-                          "1. Managed & hosted (don't reinvent the wheel)" \newline
+                          "1. Hosted languages (don't reinvent the wheel)" \newline
                           "2. Functional & logic programming (new abstractions)" \newline
-                          "3. Interactive & REPL-driven (games as art)")
+                          "3. Interactive programming (games as art)")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))

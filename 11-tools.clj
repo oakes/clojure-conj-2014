@@ -7,12 +7,12 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "Tools for Indie Games" medium-style)
+      (table [(label "Tools for Gamedev" medium-style)
               :row
               (label (str \newline
-                          "1. Managed & hosted" \newline
+                          "1. Hosted languages" \newline
                           "2. Functional & logic programming" \newline
-                          "3. Interactive & REPL-driven")
+                          "3. Interactive programming")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))

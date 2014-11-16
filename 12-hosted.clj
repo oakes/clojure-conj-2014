@@ -7,7 +7,7 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "Managed & Hosted Languages" medium-style)
+      (table [(label "Hosted Languages in Games" medium-style)
               :row
               (label (str \newline
                           "Gamedevs traditionally reject GC" \newline

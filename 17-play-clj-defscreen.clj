@@ -1,4 +1,4 @@
-(defscreen play-clj-neko-screen
+(defscreen play-clj-defscreen-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
@@ -7,12 +7,10 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [[(label "play-clj and neko" medium-style)
+      (table [[(label "defscreen" medium-style)
                :colspan 2]
               :row
               [(image "images/defscreen.png" :set-scaling (scaling :fit))
-               :pad 5 5 5 5]
-              [(image "images/defactivity.png" :set-scaling (scaling :fit))
                :pad 5 5 5 5]]
              :align (align :center)
              :set-fill-parent true)))

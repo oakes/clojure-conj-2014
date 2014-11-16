@@ -7,12 +7,7 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "List Transformations" medium-style)
-              :row
-              (label (str \newline
-                          "Mostly you just transform `entities` and return it" \newline
-                          "Same thing you already do in any Clojure program")
-                     small-style)
+      (table [(label "Transforming Entities" medium-style)
               :row
               (image "images/on-render.png" :set-scaling (scaling :fit))]
              :align (align :center)

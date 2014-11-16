@@ -10,9 +10,8 @@
       (table [(label "State in play-clj" medium-style)
               :row
               (label (str \newline
-                          "All screen functions take `screen` and `entities`" \newline
-                          "`screen` is a hash-map to store singleton values" \newline
-                          "`entities` is a vector to store...entities")
+                          "`screen` is a hash-map" \newline
+                          "`entities` is a vector")
                      small-style)
               :row
               (image "images/on-show.png" :set-scaling (scaling :fit))]

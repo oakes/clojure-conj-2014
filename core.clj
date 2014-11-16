@@ -14,7 +14,7 @@
 (load-game-file "14-good-hosted.clj")
 (load-game-file "15-play-clj-init.clj")
 (load-game-file "16-play-clj-core.clj")
-(load-game-file "17-play-clj-neko.clj")
+(load-game-file "17-play-clj-defscreen.clj")
 (load-game-file "18-play-clj-state.clj")
 (load-game-file "19-play-clj-transform.clj")
 (load-game-file "20-play-clj-entities.clj")
@@ -55,7 +55,7 @@
              [good-hosted-screen]
              [play-clj-init-screen]
              [play-clj-core-screen]
-             [play-clj-neko-screen]
+             [play-clj-defscreen-screen]
              [play-clj-state-screen]
              [play-clj-transform-screen]
              [play-clj-entities-background-screen play-clj-entities-screen]
