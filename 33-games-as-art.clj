@@ -1,4 +1,4 @@
-(defscreen playful-experimentation-screen
+(defscreen games-as-art-screen
   :on-show
   (fn [screen entities]
     (update! screen :renderer (stage) :camera (orthographic))
@@ -7,14 +7,13 @@
           medium-style (style :label medium-font (color :white))
           small-font (skin! ui-skin :get-font "small-font")
           small-style (style :label small-font (color :white))]
-      (table [(label "Playful Experimentation" medium-style)
+      (table [(label "Games as Art" medium-style)
               :row
               (label (str \newline
-                          "I love watching artists engage in their craft" \newline
-                          "They constantly iterate (playing a chord, painting over a spot)" \newline
-                          "A compiler can't tell you if your art is any good" \newline
-                          "The Sound of Silence was made in a bathroom" \newline
-                          "Imagine if he couldn't hear his guitar while playing it")
+                          "Art is the selective imitation of reality" \newline
+                          "Ebert claimed games can't be art: http://goo.gl/AfSQ39" \newline
+                          "He was right...about games today" \newline
+                          "But as a medium they are capable of it")
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))
