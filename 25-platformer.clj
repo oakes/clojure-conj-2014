@@ -15,23 +15,13 @@
       0
       velocity)))
 
-(defn touched?
-  [key]
-  (and (game :touched?)
-       (case key
-         :down (< (game :y) (/ (game :height) 3))
-         :up (> (game :y) (* (game :height) (/ 2 3)))
-         :left (< (game :x) (/ (game :width) 3))
-         :right (> (game :x) (* (game :width) (/ 2 3)))
-         false)))
-
 (defn get-x-velocity-p
   [entity]
   (if (:player? entity)
     (cond
-      (or (key-pressed? :dpad-left) (touched? :left))
+      (key-pressed? :dpad-left)
       (* -1 max-velocity-p)
-      (or (key-pressed? :dpad-right) (touched? :right))
+      (key-pressed? :dpad-right)
       max-velocity-p
       :else
       (:x-velocity entity))
@@ -41,8 +31,7 @@
   [entity]
   (if (:player? entity)
     (cond
-      (and (:can-jump? entity)
-           (or (key-pressed? :dpad-up) (touched? :up)))
+      (and (:can-jump? entity) (key-pressed? :dpad-up))
       max-jump-velocity-p
       :else
       (:y-velocity entity))
