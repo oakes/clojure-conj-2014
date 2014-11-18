@@ -35,11 +35,11 @@
     [(assoc (shape :filled
                    :set-color (color :red)
                    :rect 0 0 100 100)
-            :x 10 :y 500)
+            :x 100 :y 500)
      (assoc (texture "images/clojure.png")
-            :x 10 :y 350 :width 100 :height 100)
+            :x 100 :y 350 :width 100 :height 100)
      (assoc (particle-effect "particle-effect/fire.p")
-            :x 20 :y 200)])
+            :x 150 :y 200)])
   
   :on-render
   (fn [screen entities]
