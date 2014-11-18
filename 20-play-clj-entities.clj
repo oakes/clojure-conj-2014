@@ -14,10 +14,8 @@
                           \newline
                           "(shape :filled :set-color (color :red) :rect 0 0 10 10)" \newline
                           "(texture \"image.png\")" \newline
-                          "(nine-patch \"image.png\")" \newline
                           "(particle-effect \"particles/fire.p\")" \newline
-                          "(model \"knight.g3dj\")" \newline
-                          "; ui entities (not enough room to list all)" \newline)
+                          "; many other types of entities" \newline)
                      small-style)]
              :align (align :center)
              :set-fill-parent true)))

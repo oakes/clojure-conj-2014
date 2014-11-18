@@ -10,7 +10,6 @@
       (table [(label "About me" medium-style)
               :row
               (label (str "Independent programmer" \newline
-                          "Not a legit game developer" \newline
                           "Used to do crypto/stego" \newline
                           "Joined the dark side" \newline
                           "Quit in 2012 and started using Clojure")
