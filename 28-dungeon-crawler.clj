@@ -479,7 +479,6 @@
   (fn [screen entities]
     (let [renderer (isometric-tiled-map "dungeon-crawler/level1.tmx" (/ 1 pixels-per-tile))
           screen (update! screen
-                          :attack-cursor (pixmap "dungeon-crawler/dwarven_gauntlet.png")
                           :camera (orthographic)
                           :npc-health-bar (shape :filled)
                           :renderer renderer)
@@ -541,7 +540,6 @@
   :on-mouse-moved
   (fn [screen entities]
     (let [e (get-entity-at-cursor screen entities)]
-      (input! :set-cursor-image (if e (:attack-cursor screen) nil) 0 0)
       (update! screen :mouse-npc-id (:id e))
       nil)))
 
